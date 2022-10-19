@@ -3,5 +3,10 @@ const addSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().required(),
   phone: Joi.number().required(),
+  favorite: Joi.boolean(),
 });
-module.exports = { addSchema };
+
+const updateFavoriteSchema = Joi.object({
+  favorite: Joi.boolean().required(),
+});
+module.exports = { addSchema, updateFavoriteSchema };
