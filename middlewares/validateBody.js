@@ -10,4 +10,4 @@ const validateBody = (schema) => {
   };
   return func;
 };
-module.exports = { validateBody };
+module.exports = validateBody;
